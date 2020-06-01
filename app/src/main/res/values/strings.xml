@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">COVID Case Counter</string>
+    <string name="recover">Recovered : </string>
+    <string name="total">Confirmed Cases : </string>
+    <string name="death">Deceased : </string>
+</resources>

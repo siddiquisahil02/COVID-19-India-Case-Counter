@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spStates"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_tv"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecovered" />
+
+    <Spinner
+        android:id="@+id/spDistricts"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/white_tv"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvDconfirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSrecoved"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvConfirmed"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/red_solid"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Total Confirmed Cases : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDeceased"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gray_solid"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Total Deceased : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmed" />
+
+    <TextView
+        android:id="@+id/tvRecovered"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/blue_solid"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Total Recovered : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeceased" />
+
+    <TextView
+        android:id="@+id/tvDconfirmed"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/red_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Confirmed Cases : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDdeceased"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSconfirmed"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/red_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Confirmed Cases : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spStates" />
+
+    <TextView
+        android:id="@+id/tvDdeceased"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gray_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Deceased : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDrecoved"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSdeceased"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gray_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Deceased : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSconfirmed" />
+
+    <TextView
+        android:id="@+id/tvDrecoved"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/blue_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Recovered : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSrecoved"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/blue_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Recovered : "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSdeceased" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
